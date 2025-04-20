@@ -11,7 +11,7 @@ namespace EventNest.Controllers
         private static List<User> _users = new()
         {
             new User { Username = "admin", Password = "admin123", FullName = "Admin User", Email = "admin@example.com" },
-            new User { Username = "harsha", Password = "12345", FullName = "Harsha Jagu", Email = "harsha@eventnest.com" }
+            new User { Username = "Lokesh", Password = "12345", FullName = "Lokesh Adda", Email = "a@eventnest.com" }
         };
 
         public IActionResult SignIn() => View();
