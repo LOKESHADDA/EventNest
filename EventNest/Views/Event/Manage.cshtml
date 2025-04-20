@@ -1,0 +1,31 @@
+@model List<EventNest.Models.Event>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>Manage Events</h2>
+ 
+<a href="/Event/Create" class="btn btn-success mb-3">➕ Create New Event</a>
+ 
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Title</th><th>Category</th><th>City</th><th>Date</th><th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.Title</td>
+                <td>@e.Category</td>
+                <td>@e.City</td>
+                <td>@e.Date.ToShortDateString()</td>
+                <td>
+                    <a href="/Event/Edit/@e.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="/Event/Delete/@e.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

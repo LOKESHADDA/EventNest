@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj": {}
+    "C:\\Users\\karth\\Desktop\\ADA\\Assignment_3\\EventNest\\EventNest\\EventNest.csproj": {}
   },
   "projects": {
-    "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj": {
+    "C:\\Users\\karth\\Desktop\\ADA\\Assignment_3\\EventNest\\EventNest\\EventNest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj",
+        "projectUniqueName": "C:\\Users\\karth\\Desktop\\ADA\\Assignment_3\\EventNest\\EventNest\\EventNest.csproj",
         "projectName": "EventNest",
-        "projectPath": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj",
-        "packagesPath": "/Users/lokeshadda/.nuget/packages/",
-        "outputPath": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/obj/",
+        "projectPath": "C:\\Users\\karth\\Desktop\\ADA\\Assignment_3\\EventNest\\EventNest\\EventNest.csproj",
+        "packagesPath": "C:\\Users\\karth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\karth\\Desktop\\ADA\\Assignment_3\\EventNest\\EventNest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lokeshadda/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\karth\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -36,9 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

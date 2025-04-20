@@ -1,0 +1,69 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grouped = ViewBag.GroupedEvents as Dictionary<string, List<EventNest.Models.Event>> ?? new();
+}
+ 
+<style>
+    .event-category-section {
+        margin-top: 3rem;
+    }
+ 
+    .event-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+ 
+    .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+ 
+    .event-img {
+        height: 220px;
+        object-fit: cover;
+    }
+ 
+    .event-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 0.3rem 0.6rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        color: white;
+        background-color: rgba(0,0,0,0.6);
+    }
+</style>
+ 
+<h2 class="mb-4 text-center">🎫 Discover Events</h2>
+ 
+@foreach (var category in grouped)
+{
+    <div class="event-category-section">
+        <h3 class="mb-3">@category.Key</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+ 
+            @foreach (var ev in category.Value)
+            {
+                <div class="col">
+                    <div class="card event-card h-100">
+                        <div class="position-relative">
+                            <img src="@ev.PosterUrl" class="card-img-top event-img" alt="@ev.Title Poster">
+                            <span class="event-badge">@ev.Category</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@ev.Title</h5>
+                            <p class="card-text">@ev.Description</p>
+                        </div>
+                        <div class="card-footer text-muted small">
+                            📍 @ev.City • 🏟 @ev.Venue • 📅 @ev.Date.ToShortDateString() <br />
+                            💸 ₹@ev.Price
+                            <div class="mt-2">
+                                <a href="/Event/Details/@ev.Id" class="btn btn-sm btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
