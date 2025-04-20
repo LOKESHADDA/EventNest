@@ -1,0 +1,88 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>About EventNest 🎟</h2>
+ 
+<p>
+    EventNest is a ticket booking web application built as part of an academic project using ASP.NET Core MVC.
+    The platform allows users to browse events, book tickets, leave reviews, and view admin dashboards with analytics.
+</p>
+ 
+<hr />
+ 
+<h3 class="mt-4">👨‍💻 Team Members</h3>
+<div class="row text-center">
+    <div class="col-md-3">
+        <img src="/img/profile.png" class="img-fluid rounded-circle" style="width: 120px;" alt="Lokesh" />
+        <h6 class="mt-2">Venkata Satya Lokesh Adda</h6>
+        <p>Developer & Designer</p>
+    </div>
+    <div class="col-md-3">
+        <img src="/img/profile.png" class="img-fluid rounded-circle" style="width: 120px;" alt="Karthikeyan" />
+        <h6 class="mt-2">Karthikeyan Atmakuru</h6>
+        <p>Backend & Integrations</p>
+    </div>
+    <div class="col-md-3">
+        <img src="/img/profile.png" class="img-fluid rounded-circle" style="width: 120px;" alt="Swetha" />
+        <h6 class="mt-2">Swetha Singireddy</h6>
+        <p>UI/UX & Data Modeling</p>
+    </div>
+    <div class="col-md-3">
+        <img src="/img/profile.png" class="img-fluid rounded-circle" style="width: 120px;" alt="Raksha" />
+        <h6 class="mt-2">Raksha Basiwal</h6>
+        <p>Testing & Documentation</p>
+    </div>
+</div>
+ 
+<hr />
+ 
+<h3 class="mt-5">🧠 Technical Overview</h3>
+<ul>
+    <li>Developed using ASP.NET Core MVC architecture</li>
+    <li>Used in-memory data structures and Chart.js for visualizations</li>
+    <li>Integrated session-based authentication (Sign In/Sign Up)</li>
+    <li>Static CRUD navigation and data modeling included</li>
+</ul>
+ 
+<hr />
+ 
+<h3 class="mt-5">📊 Logical Data Model</h3>
+<p>This data model captures the structure of EventNest and how different entities are related. It demonstrates two key one-to-many relationships:</p>
+ 
+<ul>
+    <li><strong>Event → Booking</strong>: One event can have multiple ticket bookings</li>
+    <li><strong>Event → Review</strong>: One event can have multiple user reviews</li>
+</ul>
+ 
+<p>The main entities and attributes are:</p>
+ 
+<h5 class="mt-3">🗂 Event</h5>
+<ul>
+    <li><strong>Id (PK)</strong> – Unique identifier for the event</li>
+    <li>Title – Name of the event</li>
+    <li>Date – Scheduled date of the event</li>
+    <li>Location – Venue or city</li>
+    <li>Price – Ticket price per seat</li>
+    <li>ImageUrl – URL or path to the event poster image</li>
+</ul>
+ 
+<h5 class="mt-3">🎟 Booking</h5>
+<ul>
+    <li><strong>Id (PK)</strong> – Unique booking identifier</li>
+    <li><strong>EventId (FK)</strong> – Refers to the booked event</li>
+    <li>UserName – Name of the user who booked</li>
+    <li>Seats – Number of seats booked</li>
+</ul>
+ 
+<h5 class="mt-3">⭐ Review</h5>
+<ul>
+    <li><strong>Id (PK)</strong> – Unique review identifier</li>
+    <li><strong>EventId (FK)</strong> – Refers to the reviewed event</li>
+    <li>Rating – Numeric rating (e.g., 1–5)</li>
+    <li>Comment – Text review by the user</li>
+</ul>
+ 
+<div class="text-center mt-4">
+    <img src="/img/logical-model.png" alt="Logical Data Model" class="img-fluid rounded shadow" style="max-width: 700px;" />
+</div>
