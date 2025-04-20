@@ -1,0 +1,111 @@
+@using System.Text.Json
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var cityData = ViewBag.EventsPerCity as Dictionary<string, int> ?? new();
+    var bookingsPerDay = ViewBag.BookingsPerDay as Dictionary<string, int> ?? new();
+    var ticketsPerEvent = ViewBag.TicketsPerEvent as Dictionary<string, int> ?? new();
+}
+
+<h2 class="mb-4">📊 Admin Dashboard</h2>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card border-primary shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Total Events</h5>
+                <p class="display-6 fw-bold">@ViewBag.TotalEvents</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card border-success shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Total Tickets Booked</h5>
+                <p class="display-6 fw-bold">@ViewBag.TotalTickets</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h5>📍 Events Per City</h5>
+        <canvas id="cityChart"></canvas>
+    </div>
+    <div class="col-md-6">
+        <h5>📅 Bookings Per Day</h5>
+        <canvas id="dayChart"></canvas>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-8">
+        <h5>🎟️ Tickets Per Event</h5>
+        <canvas id="eventChart"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const cityLabels = @Html.Raw(JsonSerializer.Serialize(cityData.Keys.ToList()));
+        const cityCounts = @Html.Raw(JsonSerializer.Serialize(cityData.Values.ToList()));
+
+        const dayLabels = @Html.Raw(JsonSerializer.Serialize(bookingsPerDay.Keys.ToList()));
+        const dayCounts = @Html.Raw(JsonSerializer.Serialize(bookingsPerDay.Values.ToList()));
+
+        const eventLabels = @Html.Raw(JsonSerializer.Serialize(ticketsPerEvent.Keys.ToList()));
+        const eventCounts = @Html.Raw(JsonSerializer.Serialize(ticketsPerEvent.Values.ToList()));
+
+        new Chart(document.getElementById('cityChart'), {
+            type: 'bar',
+            data: {
+                labels: cityLabels,
+                datasets: [{
+                    label: 'Events',
+                    data: cityCounts,
+                    backgroundColor: 'rgba(75, 192, 192, 0.7)'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        new Chart(document.getElementById('dayChart'), {
+            type: 'line',
+            data: {
+                labels: dayLabels,
+                datasets: [{
+                    label: 'Bookings Per Day',
+                    data: dayCounts,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        new Chart(document.getElementById('eventChart'), {
+            type: 'bar',
+            data: {
+                labels: eventLabels,
+                datasets: [{
+                    label: 'Tickets Booked',
+                    data: eventCounts,
+                    backgroundColor: 'rgba(153, 102, 255, 0.7)'
+                }]
+            },
+            options: {
+                responsive: true,
+                indexAxis: 'y',
+                scales: { x: { beginAtZero: true } }
+            }
+        });
+    </script>
+}
