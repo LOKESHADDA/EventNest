@@ -1,0 +1,13 @@
+@model EventNest.Models.Event
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>Delete Event</h2>
+ 
+<p>Are you sure you want to delete the event <strong>@Model.Title</strong>?</p>
+ 
+<form method="post" action="/Event/DeleteConfirmed/@Model.Id">
+    <button class="btn btn-danger" type="submit">Yes, Delete</button>
+    <a href="/Event/Manage" class="btn btn-secondary">Cancel</a>
+</form>

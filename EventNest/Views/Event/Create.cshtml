@@ -1,0 +1,18 @@
+@model EventNest.Models.Event
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>Create Event</h2>
+ 
+<form method="post">
+    <input name="Title" placeholder="Title" class="form-control mb-2" required />
+    <input name="Category" placeholder="Category" class="form-control mb-2" required />
+    <input name="City" placeholder="City" class="form-control mb-2" required />
+    <input name="Venue" placeholder="Venue" class="form-control mb-2" required />
+    <input type="date" name="Date" class="form-control mb-2" required />
+    <input type="number" name="Price" placeholder="Price" class="form-control mb-2" required />
+    <input name="PosterUrl" placeholder="Poster URL" class="form-control mb-2" />
+    <textarea name="Description" placeholder="Description" class="form-control mb-2" rows="3"></textarea>
+    <button type="submit" class="btn btn-success">Create</button>
+</form>
