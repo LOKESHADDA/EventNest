@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/swethasingireddy/.nuget/packages/": {}
+    "C:\\Users\\karth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/swethasingireddy/Desktop/EventNest/EventNest/EventNest.csproj",
+      "projectUniqueName": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\EventNest.csproj",
       "projectName": "EventNest",
-      "projectPath": "/Users/swethasingireddy/Desktop/EventNest/EventNest/EventNest.csproj",
-      "packagesPath": "/Users/swethasingireddy/.nuget/packages/",
-      "outputPath": "/Users/swethasingireddy/Desktop/EventNest/EventNest/obj/",
+      "projectPath": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\EventNest.csproj",
+      "packagesPath": "C:\\Users\\karth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/swethasingireddy/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\karth\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

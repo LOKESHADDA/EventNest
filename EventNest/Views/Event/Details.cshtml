@@ -1,0 +1,24 @@
+@model EventNest.Models.Event
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>@Model.Title</h2>
+<div class="row">
+    <div class="col-md-6">
+        <img src="@Model.PosterUrl" class="img-fluid rounded shadow" />
+    </div>
+    <div class="col-md-6">
+        <p><strong>Category:</strong> @Model.Category</p>
+        <p><strong>City:</strong> @Model.City</p>
+        <p><strong>Venue:</strong> @Model.Venue</p>
+        <p><strong>Date:</strong> @Model.Date.ToShortDateString()</p>
+        <p><strong>Price:</strong> ₹@Model.Price</p>
+        <p>@Model.Description</p>
+ 
+        <a href="/Booking/Create?eventId=@Model.Id" class="btn btn-success">Book Tickets</a>
+        <a href="/Review/Add?eventId=@Model.Id" class="btn btn-outline-primary">Leave a Review</a>
+        <a href="/Review/View?eventId=@Model.Id" class="btn btn-link">View Reviews</a>
+    </div>
+</div>
+ 
