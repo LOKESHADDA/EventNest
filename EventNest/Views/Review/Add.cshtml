@@ -1,0 +1,14 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var eventId = ViewBag.EventId;
+}
+ 
+<h2>Leave a Review</h2>
+ 
+<form method="post">
+    <input type="hidden" name="eventId" value="@eventId" />
+    <input name="userName" placeholder="Your Name" class="form-control mb-2" required />
+    <input type="number" name="rating" placeholder="Rating (1-5)" class="form-control mb-2" min="1" max="5" required />
+    <textarea name="comment" placeholder="Your feedback" class="form-control mb-2"></textarea>
+    <button type="submit" class="btn btn-outline-primary">Submit Review</button>
+</form>
