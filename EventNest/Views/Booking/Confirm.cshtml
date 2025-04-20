@@ -1,0 +1,15 @@
+@model EventNest.Models.Booking
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var evnt = ViewBag.Event as EventNest.Models.Event;
+}
+
+<h2>Booking Confirmed ✅</h2>
+
+<p><strong>Event:</strong> @evnt.Title</p>
+<p><strong>Booked By:</strong> @Model.UserName</p>
+<p><strong>No. of Tickets:</strong> @Model.TicketCount</p>
+<p><strong>Date:</strong> @evnt.Date.ToShortDateString()</p>
+<p><strong>City:</strong> @evnt.City</p>
+
+<a href="/Event/Browse" class="btn btn-primary mt-3">Back to Events</a>

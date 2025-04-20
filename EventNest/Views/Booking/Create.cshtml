@@ -1,0 +1,13 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var eventId = ViewBag.EventId;
+}
+
+<h2>Book Tickets</h2>
+
+<form method="post">
+    <input type="hidden" name="eventId" value="@eventId" />
+    <input name="userName" placeholder="Your Name" class="form-control mb-2" required />
+    <input type="number" name="ticketCount" placeholder="No. of Tickets" class="form-control mb-2" min="1" required />
+    <button type="submit" class="btn btn-success">Confirm Booking</button>
+</form>
