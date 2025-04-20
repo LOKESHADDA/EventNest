@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\karth\\.nuget\\packages\\": {}
+    "/Users/karthiatmakuru/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\EventNest.csproj",
+      "projectUniqueName": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj",
       "projectName": "EventNest",
-      "projectPath": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\EventNest.csproj",
-      "packagesPath": "C:\\Users\\karth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karth\\Desktop\\EventNest\\EventNest\\obj\\",
+      "projectPath": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj",
+      "packagesPath": "/Users/karthiatmakuru/.nuget/packages/",
+      "outputPath": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\karth\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/karthiatmakuru/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -43,12 +43,11 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -68,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
