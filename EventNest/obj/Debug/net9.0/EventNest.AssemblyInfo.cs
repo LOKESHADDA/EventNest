@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventNest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba6d8e527d906ee468b232c62656dc94ad1a2f24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26831472071b23b19d5fac08102bb7ee7e51f536")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventNest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventNest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
