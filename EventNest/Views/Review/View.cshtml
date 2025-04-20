@@ -1,0 +1,25 @@
+@model List<EventNest.Models.Review>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var eventId = ViewBag.EventId;
+}
+ 
+<h2>Event Reviews</h2>
+ 
+@if (!Model.Any())
+{
+    <p>No reviews yet for this event.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var r in Model)
+        {
+            <li class="list-group-item">
+                <strong>@r.UserName</strong> rated <strong>@r.Rating</strong>/5<br />
+                <span>@r.Comment</span><br />
+                <small class="text-muted">Posted on @r.ReviewDate.ToShortDateString()</small>
+            </li>
+        }
+    </ul>
+}
