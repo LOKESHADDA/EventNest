@@ -1,0 +1,7 @@
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/EventNest
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/appsettings.Development.json
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/appsettings.json
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/EventNest.dll
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/EventNest.deps.json
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/EventNest.runtimeconfig.json
+/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/bin/Release/net9.0/publish/EventNest.pdb

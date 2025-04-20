@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "EventNest.sln"
+    "dotnet.defaultSolution": "EventNest.sln",
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "EventNest/bin/Release/net9.0/publish",
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/b501a892-122a-450b-ab0c-4f72ab190575/resourceGroups/appsvc_windows_eastus/providers/Microsoft.Web/sites/EventNest"
 }

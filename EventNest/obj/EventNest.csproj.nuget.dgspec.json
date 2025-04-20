@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj": {}
+    "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj": {}
   },
   "projects": {
-    "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj": {
+    "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj",
+        "projectUniqueName": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj",
         "projectName": "EventNest",
-        "projectPath": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/EventNest.csproj",
-        "packagesPath": "/Users/karthiatmakuru/.nuget/packages/",
-        "outputPath": "/Users/karthiatmakuru/Downloads/EventNest/EventNest/obj/",
+        "projectPath": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/EventNest.csproj",
+        "packagesPath": "/Users/lokeshadda/.nuget/packages/",
+        "outputPath": "/Users/lokeshadda/Documents/Course Work/AppDev/Project/EventNest/EventNest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/karthiatmakuru/.nuget/NuGet/NuGet.Config"
+          "/Users/lokeshadda/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -36,12 +36,13 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -61,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
